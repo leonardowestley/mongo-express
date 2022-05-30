@@ -33,7 +33,7 @@ mongo.connect(url, options, (err, mongoClient) => {
  menudb = db.collection('menu')
 })
 
-app.get('/', (req, res) => res.status(200).send('Hey class!'))
+app.get('/', (req, res) => res.status(200).send('Connecting to AWS!'))
 
 app.post('/', (req, res) => {
     menudb.insertOne(req.body)
